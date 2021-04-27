@@ -4,6 +4,7 @@ on: ["push", "pull_request"]
 jobs:
   check_dist:
     name: Check if yarn dist was run
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v2
         with:
