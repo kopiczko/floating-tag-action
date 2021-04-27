@@ -6,7 +6,7 @@ async function bash(command: string, options?: exec.ExecOptions) {
 }
 
 async function main(): Promise<void> {
-  await bash('git pull --all --tags');
+  await bash('git pull --depth=1 --all --tags');
   const versionTags = await getVersionTags();
   const latestForMajor = getLatestForMajor(versionTags);
 
