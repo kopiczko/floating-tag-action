@@ -31,8 +31,6 @@ Downloading a Giant Swarm binary with optional inputs left with default values:
 
 ```yaml
 steps:
-- name: Checkout the code
-  uses: actions/checkout@v2
-- name: Ensure major version tags
-  uses: giantswarm/floating-tag-action@v1
+- uses: actions/checkout@v2
+- uses: giantswarm/floating-tag-action@v1
 ```
