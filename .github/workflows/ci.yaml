@@ -2,8 +2,8 @@ name: CI
 on: ["push", "pull_request"]
 
 jobs:
-  check_dist:
-    name: Check if yarn dist was run
+  test:
+    name: Lint and check dist
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v2
@@ -11,5 +11,5 @@ jobs:
           node-version: '14'
       - uses: actions/checkout@v2
       - run: yarn install
-      - run: yarn dist
-      - run: git diff --exit-code
+      - run: yarn lint
+      - run: yarn dist && git diff --exit-code
