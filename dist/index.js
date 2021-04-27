@@ -4441,29 +4441,32 @@ function main() {
         var versionTags, latestForMajor, tagsToPush, _i, latestForMajor_1, _a, major, versionTag;
         return __generator(this, function (_b) {
             switch (_b.label) {
-                case 0: return [4, getVersionTags()];
+                case 0: return [4, bash('git pull --all --tags')];
                 case 1:
+                    _b.sent();
+                    return [4, getVersionTags()];
+                case 2:
                     versionTags = _b.sent();
                     latestForMajor = getLatestForMajor(versionTags);
                     tagsToPush = new Array();
                     _i = 0, latestForMajor_1 = latestForMajor;
-                    _b.label = 2;
-                case 2:
-                    if (!(_i < latestForMajor_1.length)) return [3, 6];
+                    _b.label = 3;
+                case 3:
+                    if (!(_i < latestForMajor_1.length)) return [3, 7];
                     _a = latestForMajor_1[_i], major = _a[0], versionTag = _a[1];
                     return [4, bash("git tag --delete v" + major)];
-                case 3:
-                    _b.sent();
-                    return [4, bash("git tag v" + major + " " + versionTag)];
                 case 4:
                     _b.sent();
-                    tagsToPush.push("v" + major);
-                    _b.label = 5;
+                    return [4, bash("git tag v" + major + " " + versionTag)];
                 case 5:
+                    _b.sent();
+                    tagsToPush.push("v" + major);
+                    _b.label = 6;
+                case 6:
                     _i++;
-                    return [3, 2];
-                case 6: return [4, bash("git push --force --tags origin " + tagsToPush.join(" "))];
-                case 7:
+                    return [3, 3];
+                case 7: return [4, bash("git push --force --tags origin " + tagsToPush.join(" "))];
+                case 8:
                     _b.sent();
                     return [2];
             }
