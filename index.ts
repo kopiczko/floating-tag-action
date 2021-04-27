@@ -12,11 +12,7 @@ async function main(): Promise<void> {
 
   const tagsToPush = new Array<string>();
   for (const [major, versionTag] of latestForMajor) {
-    // It could be done as `git tag --force` oneliner but it feels safer to do
-    // it that way.  Especially that the output of `git tag --delete` prints the
-    // ref of the deleted tag.
-    await bash(`git tag --delete v${major}`);
-    await bash(`git tag v${major} ${versionTag}`);
+    await bash(`git tag --force v${major} ${versionTag}`);
     tagsToPush.push(`v${major}`);
   }
   await bash(`git push --force --tags origin ${tagsToPush.join(" ")}`)

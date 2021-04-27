@@ -4452,21 +4452,18 @@ function main() {
                     _i = 0, latestForMajor_1 = latestForMajor;
                     _b.label = 3;
                 case 3:
-                    if (!(_i < latestForMajor_1.length)) return [3, 7];
+                    if (!(_i < latestForMajor_1.length)) return [3, 6];
                     _a = latestForMajor_1[_i], major = _a[0], versionTag = _a[1];
-                    return [4, bash("git tag --delete v" + major)];
+                    return [4, bash("git tag --force v" + major + " " + versionTag)];
                 case 4:
                     _b.sent();
-                    return [4, bash("git tag v" + major + " " + versionTag)];
-                case 5:
-                    _b.sent();
                     tagsToPush.push("v" + major);
-                    _b.label = 6;
-                case 6:
+                    _b.label = 5;
+                case 5:
                     _i++;
                     return [3, 3];
-                case 7: return [4, bash("git push --force --tags origin " + tagsToPush.join(" "))];
-                case 8:
+                case 6: return [4, bash("git push --force --tags origin " + tagsToPush.join(" "))];
+                case 7:
                     _b.sent();
                     return [2];
             }
