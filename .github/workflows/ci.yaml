@@ -1,0 +1,13 @@
+name: CI
+on: ["push", "pull_request"]
+
+jobs:
+  check_dist:
+    name: Check if yarn dist was run
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: yarn install
+      - run: yarn dist
+      - run: git diff --exit-code
