@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giantswarm/install-binary-action.git"
+    "url": "git+https://github.com/giantswarm/floating-tag-action.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/giantswarm/floating-tag-action/issues"
   },
-  "homepage": "https://github.com/kopiczko/my-js-action#readme",
+  "homepage": "https://github.com/giantswarm/floating-tag-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.7",
     "@actions/exec": "^1.0.4",
