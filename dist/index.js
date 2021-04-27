@@ -4441,7 +4441,7 @@ function main() {
         var versionTags, latestForMajor, tagsToPush, _i, latestForMajor_1, _a, major, versionTag;
         return __generator(this, function (_b) {
             switch (_b.label) {
-                case 0: return [4, bash('git pull --all --tags')];
+                case 0: return [4, bash('git pull --depth=1 --all --tags')];
                 case 1:
                     _b.sent();
                     return [4, getVersionTags()];
