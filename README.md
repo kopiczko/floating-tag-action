@@ -19,12 +19,7 @@ force-pushed.
 
 ## Inputs
 
-To check all the inputs and their defaults see [action.yml](action.yml) file.
-
-### `dry_run`
-
-**Optional.** Defaults to false. If set to true the newly created tags won't be
-pushed.
+This action doesn't have any inputs.
 
 ## Outputs
 
@@ -35,9 +30,9 @@ This action doesn't have any outputs.
 Downloading a Giant Swarm binary with optional inputs left with default values:
 
 ```yaml
-- uses: actions/checkout@v2
-- uses: giantswarm/floating-tag-action@VERSION
-  with:
-    binary: "devctl"
-    version: "2.0.0"
+steps:
+- name: Checkout the code
+  uses: actions/checkout@v2
+- name: Ensure major version tags
+  uses: giantswarm/floating-tag-action@v1
 ```
