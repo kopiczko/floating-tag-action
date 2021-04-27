@@ -1,6 +1,6 @@
 # floating-tag-action
 
-This actions ensures that all tags in the repository in the current path have
+This action ensures that all tags in the repository in the current path have
 corresponding major version tags.
 
 Version tags are tags matching pattern: `v*.*.*`. Tags starting with `v0.*` are

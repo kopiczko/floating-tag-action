@@ -1,7 +1,7 @@
 {
   "name": "floating-tag-action",
   "version": "0.1.0",
-  "description": "GitHub action to install compressed binary from a given URL.",
+  "description": "Ensures that all tags in the repository in the current path have corresponding major version tags.",
   "main": "index.ts",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
