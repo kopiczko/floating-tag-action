@@ -14,7 +14,7 @@ async function main(): Promise<void> {
 
     const tagsToPush = new Array<string>()
     for (const [major, versionTag] of latestForMajor) {
-      await bash(`git tag --force v${major} ${versionTag}`)
+      await bash(`git tag --force -a -m 'Move v${major} tag to ${versionTag}' v${major} ${versionTag}`)
       tagsToPush.push(`v${major}`)
     }
     await bash(`git push --force --tags origin ${tagsToPush.join(" ")}`)
