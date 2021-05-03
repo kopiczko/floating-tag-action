@@ -1,0 +1,9 @@
+name: 'Floating tag'
+description: >
+    This action ensures that all tags in the repository in the current path
+    have corresponding major version tags.
+inputs: {}
+outputs: {}
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

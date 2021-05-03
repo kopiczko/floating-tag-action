@@ -1,0 +1,15 @@
+name: CI
+on: ["push", "pull_request"]
+
+jobs:
+  test:
+    name: Lint and check dist
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - uses: actions/checkout@v2
+      - run: yarn install
+      - run: yarn lint
+      - run: yarn dist && git diff --exit-code
