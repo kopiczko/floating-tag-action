@@ -7,4 +7,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-[Unreleased]: https://github.com/giantswarm/floating-tag-action/tree/master
+[Unreleased]: https://github.com/giantswarm/floating-tags-action/tree/master

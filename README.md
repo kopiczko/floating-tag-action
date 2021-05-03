@@ -1,4 +1,4 @@
-# floating-tag-action
+# floating-tags-action
 
 This action ensures that all tags in the repository in the current path have
 corresponding major version tags.
@@ -32,5 +32,5 @@ Downloading a Giant Swarm binary with optional inputs left with default values:
 ```yaml
 steps:
 - uses: actions/checkout@v2
-- uses: giantswarm/floating-tag-action@v1
+- uses: giantswarm/floating-tags-action@v1
 ```
