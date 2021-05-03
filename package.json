@@ -1,5 +1,5 @@
 {
-  "name": "floating-tag-action",
+  "name": "floating-tags-action",
   "version": "0.1.0",
   "description": "Ensures that all tags in the repository in the current path have corresponding major version tags.",
   "main": "index.ts",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giantswarm/floating-tag-action.git"
+    "url": "git+https://github.com/giantswarm/floating-tags-action.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/giantswarm/floating-tag-action/issues"
+    "url": "https://github.com/giantswarm/floating-tags-action/issues"
   },
-  "homepage": "https://github.com/giantswarm/floating-tag-action#readme",
+  "homepage": "https://github.com/giantswarm/floating-tags-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.7",
     "@actions/exec": "^1.0.4",
