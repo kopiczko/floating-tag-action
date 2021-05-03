@@ -4853,7 +4853,7 @@ function main() {
                 case 3:
                     if (!(_i < latestForMajor_1.length)) return [3, 6];
                     _a = latestForMajor_1[_i], major = _a[0], versionTag = _a[1];
-                    return [4, bash("git tag --force v" + major + " " + versionTag)];
+                    return [4, bash("git tag --force -a -m 'Move v" + major + " tag to " + versionTag + "' v" + major + " " + versionTag)];
                 case 4:
                     _b.sent();
                     tagsToPush.push("v" + major);
