@@ -1,6 +1,6 @@
 # DO NOT EDIT. Generated with:
 #
-#    devctl@4.4.1-dev
+#    devctl@4.5.1
 #
 name: Create Release
 on:
@@ -182,7 +182,7 @@ jobs:
       - create_release
     steps:
       - uses: actions/checkout@v2
-      - uses: giantswarm/floating-tags-action@main
+      - uses: giantswarm/floating-tags-action@v1
 
   create-release-branch:
     name: Create release branch
