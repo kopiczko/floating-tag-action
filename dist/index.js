@@ -4839,37 +4839,43 @@ function main() {
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0:
-                    _b.trys.push([0, 8, , 9]);
+                    _b.trys.push([0, 10, , 11]);
                     return [4, bash('git pull --depth=1 --all --tags')];
                 case 1:
                     _b.sent();
-                    return [4, getVersionTags()];
+                    return [4, bash('git config --local user.email "action@github.com"')];
                 case 2:
+                    _b.sent();
+                    return [4, bash('git config --local user.name "GitHub Action"')];
+                case 3:
+                    _b.sent();
+                    return [4, getVersionTags()];
+                case 4:
                     versionTags = _b.sent();
                     latestForMajor = getLatestForMajor(versionTags);
                     tagsToPush = new Array();
                     _i = 0, latestForMajor_1 = latestForMajor;
-                    _b.label = 3;
-                case 3:
-                    if (!(_i < latestForMajor_1.length)) return [3, 6];
-                    _a = latestForMajor_1[_i], major = _a[0], versionTag = _a[1];
-                    return [4, bash("git tag --force v" + major + " " + versionTag)];
-                case 4:
-                    _b.sent();
-                    tagsToPush.push("v" + major);
                     _b.label = 5;
                 case 5:
-                    _i++;
-                    return [3, 3];
-                case 6: return [4, bash("git push --force --tags origin " + tagsToPush.join(" "))];
-                case 7:
+                    if (!(_i < latestForMajor_1.length)) return [3, 8];
+                    _a = latestForMajor_1[_i], major = _a[0], versionTag = _a[1];
+                    return [4, bash("git tag --force -a -m 'Move v" + major + " tag to " + versionTag + "' v" + major + " " + versionTag)];
+                case 6:
                     _b.sent();
-                    return [3, 9];
-                case 8:
+                    tagsToPush.push("v" + major);
+                    _b.label = 7;
+                case 7:
+                    _i++;
+                    return [3, 5];
+                case 8: return [4, bash("git push --force --tags origin " + tagsToPush.join(" "))];
+                case 9:
+                    _b.sent();
+                    return [3, 11];
+                case 10:
                     error_1 = _b.sent();
                     _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error_1.message);
-                    return [3, 9];
-                case 9: return [2];
+                    return [3, 11];
+                case 11: return [2];
             }
         });
     });
