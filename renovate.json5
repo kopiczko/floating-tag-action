@@ -7,8 +7,25 @@
   ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["@actions/.+"],
+      "matchPackagePatterns": [
+        "typescript",
+      ],
+      "groupName": "typescript",
+    },
+    {
+      "matchPackagePatterns": [
+        "@actions/.+",
+        "@vercel/ncc",
+        "@types/semver",
+      ],
       "groupName": "JS dependencies",
+    },
+    {
+      "matchPackagePatterns": [
+        "actions/.+",
+        "giantswarm/install-binary-action",
+      ],
+      "groupName": "GitHub Actions dependencies",
     },
   ],
 }
