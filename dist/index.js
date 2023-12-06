@@ -30918,7 +30918,7 @@ async function main() {
         await bash(`git push --force --tags origin ${tagsToPush.join(" ")}`);
     }
     catch (error) {
-        core.setFailed(error.message);
+        core.setFailed(error?.message);
     }
 }
 function getLatestForMajor(versionTags) {

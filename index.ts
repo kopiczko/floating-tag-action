@@ -22,11 +22,11 @@ async function main(): Promise<void> {
     }
     await bash(`git push --force --tags origin ${tagsToPush.join(" ")}`)
   } catch (error) {
-    core.setFailed(error.message)
+    core.setFailed((error as Error)?.message)
   }
 }
 
-/** @returs an array of tuples of a major number of the version and its latest corresponding version tag. */
+/** @returns an array of tuples of a major number of the version and its latest corresponding version tag. */
 function getLatestForMajor(versionTags: string[]): [number, string][] {
   const latestForMajor = new Map<number, string>()
 
