@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update @actions/core from 1.2.7 to 1.10.1.
 - Update @actions/exec from 1.0.4 to 1.1.1.
 - Update @actions/tool-cache from 1.6.1 to 1.7.2.
+- Update @types/node form ^18.14.6 to ^20.0.0.
 - Update @types/semver from 7.3.6 to 7.5.6.
 - Update @vercel/ncc from ^0.28.6 to ^0.38.0.
 
