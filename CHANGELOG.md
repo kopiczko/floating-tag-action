@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Changed
+
+- Update @types/semver from 7.3.6 to 7.5.6.
+- Update @vercel/ncc from ^0.28.6 to ^0.38.0.
+
 ## [1.0.0] - 2021-05-04
 
 [Unreleased]: https://github.com/giantswarm/floating-tags-action/compare/v1.0.0...HEAD
