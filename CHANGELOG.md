@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Changed
 
+- Update typescript from 4.3.2 to 4.9.5.
 - Update @actions/core from 1.2.7 to 1.10.1.
 - Update @actions/exec from 1.0.4 to 1.1.1.
 - Update @actions/tool-cache from 1.6.1 to 1.7.2.
