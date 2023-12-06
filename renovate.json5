@@ -9,7 +9,7 @@
     {
       "excludePackageNames": [
         "typescript",
-      ]
+      ],
       "matchPackagePatterns": [
         "eslint",
       ],
