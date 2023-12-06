@@ -8,6 +8,12 @@
   "packageRules": [
     {
       "matchPackagePatterns": [
+        "eslint",
+      ],
+      "groupName": "eslint",
+    },
+    {
+      "matchPackagePatterns": [
         "typescript",
       ],
       "groupName": "typescript",
@@ -18,15 +24,11 @@
         "@vercel/ncc",
         "@types/semver",
       ],
-      "matchFileNames": ["package.json"],
+      "matchDepTypes": ["dependencies"],
       "groupName": "JS dependencies",
     },
     {
-      "matchPackagePatterns": [
-        "actions/.+",
-        "giantswarm/install-binary-action",
-      ],
-      "matchFileNames": [".github/**"],
+      "matchDepTypes": ["action"],
       "groupName": "GitHub Actions dependencies",
     },
   ],
