@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "github>giantswarm/renovate-presets:default.json5",
+    "github>giantswarm/renovate-presets:disable-ansible.json5",
+    "github>giantswarm/renovate-presets:disable-kustomize.json5",
+    "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "typescript",
+      ],
+      "groupName": "typescript",
+    },
+    {
+      "matchPackagePatterns": [
+        "@actions/.+",
+        "@vercel/ncc",
+        "@types/semver",
+      ],
+      "groupName": "JS dependencies",
+    },
+    {
+      "matchPackagePatterns": [
+        "actions/.+",
+        "giantswarm/install-binary-action",
+      ],
+      "groupName": "GitHub Actions dependencies",
+    },
+  ],
+}
