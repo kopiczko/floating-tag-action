@@ -7,23 +7,27 @@
   ],
   "packageRules": [
     {
+      "excludePackageNames": [
+        "typescript",
+      ]
       "matchPackagePatterns": [
         "eslint",
       ],
       "groupName": "eslint",
     },
     {
-      "matchPackagePatterns": [
+      "matchPackageNames": [
         "typescript",
       ],
       "groupName": "typescript",
     },
     {
-      "matchPackagePatterns": [
-        "@actions/.+",
-        "@vercel/ncc",
-        "@types/semver",
-      ],
+      "excludePackageNames": [
+        "typescript",
+      ]
+      "excludePackagePatterns": [
+        "eslint",
+      ]
       "matchDepTypes": ["dependencies"],
       "groupName": "JS dependencies",
     },
