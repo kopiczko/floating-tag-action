@@ -6,9 +6,9 @@ jobs:
     name: Lint and check dist
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
       - uses: actions/checkout@v2
       - run: yarn install
       - run: yarn lint
