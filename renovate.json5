@@ -24,10 +24,10 @@
     {
       "excludePackageNames": [
         "typescript",
-      ]
+      ],
       "excludePackagePatterns": [
         "eslint",
-      ]
+      ],
       "matchDepTypes": ["dependencies"],
       "groupName": "JS dependencies",
     },
