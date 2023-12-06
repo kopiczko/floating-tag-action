@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "github>giantswarm/renovate-presets:default.json5",
+    "github>giantswarm/renovate-presets:disable-ansible.json5",
+    "github>giantswarm/renovate-presets:disable-kustomize.json5",
+    "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["@actions/.+"],
+      "groupName": "JS dependencies",
+    },
+  ],
+}
