@@ -7,12 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## Changed
-
 - Update typescript to 4.9.5 (minor).
 - Update @actions/core to 1.10.1 (minor).
 - Update @actions/exec to 1.1.1 (minor).
-- Update @actions/tool-cache to 1.7.2 (minor).
+- Update @actions/tool-cache to 2.0.0 (major).
 - Update @types/node to v20.10.4 (major).
 - Update @types/semver to 7.5.4 (minor).
 - Update @vercel/ncc to ^0.38.0 (minor).
