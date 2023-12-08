@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2023-12-08
+
 - Update typescript to 4.9.5 (minor).
 - Update @actions/core to 1.10.1 (minor).
 - Update @actions/exec to 1.1.1 (minor).
@@ -17,5 +19,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2021-05-04
 
-[Unreleased]: https://github.com/giantswarm/floating-tags-action/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/giantswarm/floating-tags-action/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/giantswarm/floating-tags-action/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/giantswarm/floating-tags-action/releases/tag/v1.0.0
