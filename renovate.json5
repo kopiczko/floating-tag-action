@@ -38,7 +38,7 @@
       "groupName": "JS dependencies",
     },
     {
-      "matchFileNames": [".github/workflows/**"],
+      "matchManagers": ["github-actions"],
       "groupName": "GitHub Actions dependencies",
     },
   ],
