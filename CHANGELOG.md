@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Bump @types/semver from 7.5.7 to 7.5.8.
+
 ## [1.0.1] - 2023-12-08
 
 - Update typescript to 4.9.5 (minor).
