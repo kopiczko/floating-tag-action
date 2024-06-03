@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.2] - 2024-06-03
 
+- Use NodeJS v20
 - Bump @types/semver from 7.5.7 to 7.5.8.
 
 ## [1.0.1] - 2023-12-08
