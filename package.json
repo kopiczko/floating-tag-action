@@ -4,7 +4,7 @@
   "description": "Ensures that all tags in the repository in the current path have corresponding major version tags.",
   "main": "index.ts",
   "scripts": {
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint .",
     "dist": "ncc build -o dist index.ts"
   },
   "repository": {

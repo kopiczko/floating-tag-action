@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Update dependency semver to v7.6.2
+- Update dependency semver to v7.6.2.
+- Update dependency eslint to v9.
 
 ## [1.0.2] - 2024-06-03
 
