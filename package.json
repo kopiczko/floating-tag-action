@@ -30,6 +30,6 @@
     "@typescript-eslint/parser": "7.16.0",
     "@vercel/ncc": "0.38.1",
     "eslint": "9.7.0",
-    "typescript": "5.5.3"
+    "typescript": "5.5.4"
   }
 }
